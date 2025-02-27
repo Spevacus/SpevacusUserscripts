@@ -5,6 +5,6 @@ When a user has a lot of deleted profiles and they each have deleted posts, gett
 
 This script adds a button that shows a table with every post from the whole user history.
 
-![user history with all posts from deleted profiles in a table](https://i.imgur.com/9dA8dfI.gif)
+![](https://i.imgur.com/5KzjAXa.gif)
 
 This script is compatible with [User History improvements](https://github.com/samliew/SO-mod-userscripts/blob/master/README.md#user-history-improvements-) by Sam Liew.
