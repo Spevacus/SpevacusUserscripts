@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         List All Posts from Deleted Profiles
-// @version      0.1
+// @version      0.2
 // @description  On an existing user's history page, add a link to view all deleted posts from them.
 // @author       Spevacus
 // @namespace    Spevacus
@@ -68,7 +68,11 @@ function getDeletedUserIds(deletionEventElements) {
     let userIds = [];
     const regexForId = /\d+/g;
     deletionEventElements.each(function(index, element) {
-        userIds.push(element.href.match(regexForId));
+        let idMatch = element.href.match(regexForId);
+        let userId = idMatch !== null ? idMatch[0] : null;
+        if(userId && !userIds.includes(userId)) {
+            userIds.push(userId);
+        }
     });
     return userIds;
 }
