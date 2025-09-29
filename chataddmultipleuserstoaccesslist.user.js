@@ -2,7 +2,7 @@
 // @name         Add Multiple Users to Chat Access List
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  try to take over the world!
+// @description  Add multiple chat IDs to a room's access list at a time. Accepts comma-delimited input.
 // @author       Spevacus
 // @match        https://chat.stackoverflow.com/rooms/info/*/*?tab=access*
 // @match        https://chat.stackexchange.com/rooms/info/*/*?tab=access*
